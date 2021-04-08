@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  color: white;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  grid-area: card;
+
+  background-color: rgb(41, 41, 41);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-rows: 60px 200px 100px;
+}
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+}
+
+.back-arrow {
+  width: 20px;
+
+  margin: 10px;
+
+  border-radius: 50%;
+}
+
+.like:hover,
+.options:hover,
+.back-arrow:hover {
+  transform: scale(1.2);
+  background-color: rgb(22, 18, 18);
+}
+
+.like {
+  width: 20px;
+  margin: 10px;
+
+  border-radius: 50%;
+
+  justify-self: right;
+  align-self: center;
+}
+
+.options {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  margin: 10px;
+
+  justify-self: right;
+  align-self: center;
+}
+
+.profile {
+  display: grid;
+  place-items: center;
+}
+
+.profile .pfp {
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+  border-radius: 50%;
+
+  justify-self: center;
+}
+
+.pfp:hover {
+  transform: scale(1.2);
+}
+
+.job {
+  font-size: 8px;
+}
+
+.motto {
+  font-size: 12px;
+}
+
+.hire-me {
+  padding: 5px 25px;
+
+  border: 1px solid white;
+  border-radius: 10px;
+
+  background: linear-gradient(45deg, #3726ca, #137b8d);
+
+  transform: rotate 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.social-links {
+  display: grid;
+  grid-auto-flow: column;
+
+  padding: 10px;
+
+  grid-gap: 15px;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 50%;
+
+  padding: 10px;
+}
+
+img:hover {
+  transform: rotate(-20deg);
+  transform: scale(1.2);
+  background-color: royalblue;
+}
